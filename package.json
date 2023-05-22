@@ -1,9 +1,9 @@
 {
-  "homepages": "https://Aman-210.github.io/Coffee.Shop",
-  "name": "myapp",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
+   "homepages": "https://Aman-210.github.io/coffee.shop",
+   "name": "Coffee Shop",
+   "version": "0.1.0",
+   "private": true,
+   "dependencies": {
     "@emotion/react": "^11.10.8",
     "@emotion/styled": "^11.10.8",
     "@mui/icons-material": "^5.11.16",
