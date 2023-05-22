@@ -1,4 +1,4 @@
-import { Box, Typography, styled , TextField , Button, Tabs, Tab} from "@mui/material";
+import { Box, Typography, styled , TextField , Button,} from "@mui/material";
 
 
 
@@ -25,15 +25,15 @@ const Box1 = styled(Box)(({ theme }) => ({
     }
 }))
 
-const Nav = styled(Tabs)(({ theme }) => ({
-    flexWrap: 'wrap',
+// const Nav = styled(Tabs)(({ theme }) => ({
+//     flexWrap: 'wrap',
     
      
-    [theme.breakpoints.down('mobile')]: {
+//     [theme.breakpoints.down('mobile')]: {
 
 
-    }
-}))
+//     }
+// }))
 const Heading = styled(Typography)(({ theme }) => ({
 
     color: '#fff',

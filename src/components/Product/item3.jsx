@@ -46,7 +46,7 @@ const Cards = styled(Card)(({theme})=>({
 
 
   const Item3 = ({item , handleOnClick}) => {
-  const{id , name , price , image , About,quantity} = item;
+  const{ name , price , image , About} = item;
   return (
     <Section>
      <Cards sx={{ width: 345  , background: '#f3d2b2' , marginLeft:'8.5rem'}}>

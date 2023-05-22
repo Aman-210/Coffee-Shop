@@ -1,5 +1,5 @@
 import { Box , styled , Divider, Typography , CardContent} from '@mui/material';
-import { red } from '@mui/material/colors';
+
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css';
 import { Testimonials } from '../../constant/data';

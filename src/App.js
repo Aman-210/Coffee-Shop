@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import { useState } from 'react';
-import { Typography , ThemeProvider } from '@mui/material';
-import {BrowserRouter , Routes, Route} from "react-router-dom"
+import {  ThemeProvider } from '@mui/material';
+
 // components
 import  Header  from './components/Header/header';
 import Container from './components/Header/container';
@@ -52,7 +52,7 @@ function App() {
 
   return (
     
-     <BrowserRouter>
+     
      <ThemeProvider theme={theme}>
     
         <Header size={cart.length} setShow={setShow}  />
@@ -75,7 +75,7 @@ function App() {
             warning && <div className='warning'>Item is already added to your cart</div>
            }
         </ThemeProvider>
-      </BrowserRouter>
+     
       
     
   );

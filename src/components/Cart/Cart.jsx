@@ -1,4 +1,4 @@
-import { Box , Button , Typography , styled, colors , ThemeProvider } from "@mui/material";
+import { Box , Button , Typography , styled,  ThemeProvider } from "@mui/material";
 import AddBoxIcon from '@mui/icons-material/AddBox';
 import IndeterminateCheckBoxIcon from '@mui/icons-material/IndeterminateCheckBox';
 import BackspaceIcon from '@mui/icons-material/Backspace';
@@ -273,6 +273,7 @@ const Container2 = styled(Box)(({theme})=>({
       let ans = 0;
       cart.map((item)=>{
         ans+= item.quantity *item.price;
+        return item;
       })
       setPrice(ans);
     } 

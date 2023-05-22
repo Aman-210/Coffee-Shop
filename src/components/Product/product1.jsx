@@ -1,4 +1,4 @@
-import { styled , Box} from '@mui/material';
+
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css';
 import { productData } from "../../constant/data";

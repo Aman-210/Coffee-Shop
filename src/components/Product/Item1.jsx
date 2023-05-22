@@ -45,7 +45,7 @@ const Cards = styled(Card)(({theme})=>({
 
 
  const Item1 = ({item , handleOnClick}) => {
-   const{id , name ,About , price , image , quantity} = item;
+   const{ name ,About , price , image } = item;
   return(
    <Section>
    <Cards >
