@@ -113,21 +113,21 @@ const MenuBar = styled(Box)(({theme})=>({
    };
    const list =()=>{
     return(
-    <Box sx={{ width: '400px', height:'45vh', background:'black' , color:'#fff' }} onClick ={handleClose}> 
+    <Box sx={{ width: '400px', height:'47vh', background:'black' , color:'#fff' }} onClick ={handleClose}> 
       <List>
         <ListItem1 >
           <ListItemButton>
-          <Tab  label="Cups & Mugs"/>
+          <Tab  label="Latte"/>
           </ListItemButton>
           
           <ListItemButton>
-          <Tab  label="Coffee Accessories" /> 
+          <Tab  label="Cups & Mugs" /> 
+          </ListItemButton>
+          <ListItemButton>
+          <Tab  label="Raw-Coffee"/>
           </ListItemButton>
           <ListItemButton>
           <Tab  label="Organic Coffee"/>
-          </ListItemButton>
-          <ListItemButton>
-          <Tab  label="Latte"/>
           </ListItemButton>
         </ListItem1>
         <ListItem2>
