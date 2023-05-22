@@ -91,7 +91,7 @@ const TopHeading = styled(Typography)`
       transform: 'translateY(-50%)'
    },
    [theme.breakpoints.down('mobile')]:{
-      bottom:'34.5rem',
+      bottom:'35rem',
       left: '3rem',
    },
  }))
