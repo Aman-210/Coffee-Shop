@@ -113,7 +113,7 @@ const MenuBar = styled(Box)(({theme})=>({
    };
    const list =()=>{
     return(
-    <Box sx={{ width: '400px', height:'45vh', background:'black' , color:'#fff' }} onClick ={handleClose}> 
+    <Box sx={{ width: '400px', height:'47vh', background:'black' , color:'#fff' }} onClick ={handleClose}> 
       <List>
         <ListItem1 >
           <ListItemButton>
