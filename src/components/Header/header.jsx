@@ -113,21 +113,21 @@ const MenuBar = styled(Box)(({theme})=>({
    };
    const list =()=>{
     return(
-    <Box sx={{ width: '400px', height:'47vh', background:'black' , color:'#fff' }} onClick ={handleClose}> 
+    <Box sx={{ width: '400px', height:'47vh', background:'black' , color:'#fff', position:'fixed' }} onClick ={handleClose}> 
       <List>
         <ListItem1 >
           <ListItemButton>
-          <Tab  label="Latte"/>
+          <Tab href='#component1' label="Latte"/>
           </ListItemButton>
           
           <ListItemButton>
-          <Tab  label="Cups & Mugs" /> 
+          <Tab href='#component2' label="Cups & Mugs" /> 
           </ListItemButton>
           <ListItemButton>
-          <Tab  label="Raw-Coffee"/>
+          <Tab href='#component3' label="Raw-Coffee"/>
           </ListItemButton>
           <ListItemButton>
-          <Tab  label="Organic Coffee"/>
+          <Tab href='#component4' label="Organic Coffee"/>
           </ListItemButton>
         </ListItem1>
         <ListItem2>
@@ -159,10 +159,10 @@ const MenuBar = styled(Box)(({theme})=>({
       
      </Drawer>
      <Family textColor='inherit' value={0} >
-      <Tab  label="Cups & Mugs"/>
-      <Tab  label="Coffee Accessories" /> 
-      <Tab  label="Latte"/>
-      <Tab  label="Organic Coffee"/>
+      <Tab href='#component1' label="Latte's"/>
+      <Tab href='#component2' label="Cups & Mugs" /> 
+      <Tab href='#component3' label="Raw-Coffee"/>
+      <Tab href='#component4' label="Organic Coffee"/>
       
       
      </Family>

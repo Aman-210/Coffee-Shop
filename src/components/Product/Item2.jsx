@@ -47,7 +47,7 @@ const Cards = styled(Card)(({theme})=>({
  const Item2 = ({item , handleOnClick}) => {
    const{ name ,About , price , image } = item;
   return(
-   <Section>
+   <Section id='component2'>
    <Cards sx={{ width: 345  , background: '#f3d2b2' , marginLeft:'8.5rem'}}>
    <CardMedia
      sx={{ height: 200 , }}

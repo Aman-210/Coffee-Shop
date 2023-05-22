@@ -30,7 +30,7 @@ const responsive = {
 
  const Product1 = ({handleOnClick})=>{
     return(
-       
+      
      <Carousel
      responsive={responsive}
      swipeable={true}
@@ -43,7 +43,7 @@ const responsive = {
             ))
         }
     </Carousel>
-   
+    
     )
 }
 export default Product1;
