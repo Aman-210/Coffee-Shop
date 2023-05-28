@@ -1,4 +1,4 @@
-import { Box , Button , Typography , styled,  ThemeProvider } from "@mui/material";
+import { Box , Button, Typography , styled,  ThemeProvider } from "@mui/material";
 import AddBoxIcon from '@mui/icons-material/AddBox';
 import IndeterminateCheckBoxIcon from '@mui/icons-material/IndeterminateCheckBox';
 import BackspaceIcon from '@mui/icons-material/Backspace';
@@ -263,7 +263,7 @@ const Container2 = styled(Box)(({theme})=>({
     marginLeft:'auto'
   },
  }));
- 
+
 
  
 
@@ -341,6 +341,8 @@ const Container2 = styled(Box)(({theme})=>({
             width: '65%',
             }}>
            <Text fontSize={'25px'} fontFamily={'cursive'}>Total price of your cart</Text>
+          
+            
            <TotalPrice  >{price}$</TotalPrice>
            </Box>
             </Box>

@@ -15,7 +15,7 @@ const Section = styled(Box)(({theme})=>({
     
   },
   [theme.breakpoints.down('mobile')]:{
-    height:'60vh',
+    height:'70vh',
     
   }
 

@@ -68,6 +68,12 @@ const Email = styled(Typography)(({ theme }) => ({
      marginLeft:'0vh',
      width:'100%',
 
+    },
+    [theme.breakpoints.down('tablet')]: {
+     fontSize:'10px',
+     marginLeft:'0vh',
+     width:'100%',
+
     }
 }))
 const Copyright = styled(Typography)(({ theme }) => ({
@@ -78,7 +84,11 @@ const Copyright = styled(Typography)(({ theme }) => ({
    [theme.breakpoints.down('mobile')]: {
     marginTop:'2vh',
    marginLeft:'4vh',
-   }
+   },
+   [theme.breakpoints.down('tablet')]: {
+    marginTop:'2vh',
+    marginLeft:'10vh',
+}
 }))
 
 

@@ -91,7 +91,7 @@ const TopHeading = styled(Typography)`
       transform: 'translateY(-50%)'
    },
    [theme.breakpoints.down('mobile')]:{
-      bottom:'34rem',
+      bottom:'20rem',
       left: '3rem',
    },
  }))
@@ -117,7 +117,7 @@ const TopHeading = styled(Typography)`
    color:'#fff',
   },
   [theme.breakpoints.down('mobile')]:{
-   top: '40%',
+   top: '91%',
    height:'10vh',
    
   }
@@ -172,7 +172,7 @@ const TopHeading = styled(Typography)`
    },
    [theme.breakpoints.down('mobile')]:{
     
-      height:'41vh',
+      height:'98vh',
       marginTop:'4vh' ,
    
    }

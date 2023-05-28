@@ -15,7 +15,7 @@ const Section = styled(Box)(({theme})=>({
     
   },
   [theme.breakpoints.down('mobile')]:{
-    height:'60vh',
+    height:'70vh',
     
   }
 
@@ -33,7 +33,7 @@ const Cards = styled(Card)(({theme})=>({
   [theme.breakpoints.down('mobile')]:{
     width:330,
     marginLeft:'3rem',
-    
+  
     
   }
 

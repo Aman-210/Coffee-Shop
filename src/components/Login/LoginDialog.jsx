@@ -19,6 +19,27 @@
     font-family: 'Kanit', sans-serif;
  }
  `;
+
+ const Text1 = styled(Typography)(({theme})=>({
+   
+   
+    
+  
+    [theme.breakpoints.down('mobile')]:{
+        marginLeft: '-5vh'
+      
+    }
+ }))
+ const Text2 = styled(Typography)(({theme})=>({
+   
+    
+    
+  
+    [theme.breakpoints.down('mobile')]:{
+        marginLeft: '-5vh'
+      
+    }
+ }))
  const Wrapper = styled(Box)`
  background: url(https://st.depositphotos.com/1262401/4942/i/450/depositphotos_49427759-stock-photo-vintage-coffee-beans-banner.jpg)  left 55% no-repeat  ;
  background-size:cover;
@@ -104,8 +125,8 @@
             <Component>
                 <Box style={{ display: 'flex', height: '100%' }}>
                     <Image>
-                        <Typography variant="h5">{account.heading}</Typography>
-                        <Typography style={{ marginTop: 20, }}>{account.subHeading}</Typography>
+                        <Text1 variant="h5" >{account.heading}</Text1>
+                        <Text2  style={{marginTop:20}}>{account.subHeading}</Text2>
                     </Image>
                     { 
                      account.view === 'login'?

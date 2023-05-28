@@ -45,6 +45,11 @@ const Box1 = styled(Box)(({theme})=>({
     display:'block',
     marginLeft:'0',
     
+  },
+  [theme.breakpoints.down('tablet')]:{
+    
+    marginLeft:'0',
+    marginBottom:'73vh',
   }
 }))
 const Box2 = styled(Box)(({theme})=>({
@@ -52,18 +57,30 @@ const Box2 = styled(Box)(({theme})=>({
     marginLeft:'22vh',
     marginBottom:'38vh',
     [theme.breakpoints.down('mobile')]:{
-   
-    display:'none',
-      }
+      display:'none',
+    
+      },
+    [theme.breakpoints.down('tablet')]:{
+      marginLeft:'12vh',
+      marginBottom:'75vh',
+      },
 }))
 const Box3 = styled(Box)(({theme})=>({
     whiteSpace: 'nowrap',
     marginLeft:'-10vh',
     marginTop:"16vh",
+    [theme.breakpoints.down('tablet')]:{
+        marginLeft:'-58vh',
+       
+
+        marginTop:'32vh',
+        marginRight:'auto',
+        
+      },
     [theme.breakpoints.down('mobile')]:{
         marginLeft:'1vh',
         marginTop:'-50vh'
-      }
+      },
 }))
 const Country = styled(Box)(({theme})=>({
     cursor:'pointer',
@@ -90,6 +107,11 @@ const Services = styled(Typography)(({theme})=>({
         marginLeft:'0vh',
         fontSize:'20px',
     
+      },
+    [theme.breakpoints.down('tablet')]:{
+        marginLeft:'0vh',
+        fontSize:'30px',
+    
       }
 }))
 const Points = styled(Typography)(({theme})=>({
@@ -100,11 +122,16 @@ const Points = styled(Typography)(({theme})=>({
      color:'rgb(247, 213, 189)',
 
    
+     [theme.breakpoints.down('tablet')]:{
+         marginLeft:'0vh',
+         marginTop:'0vh',
+         fontSize:'22px',
+       },
     [theme.breakpoints.down('mobile')]:{
         marginLeft:'0vh',
         marginTop:'0vh',
         fontSize:'12px',
-      }
+      },
 }))
 const Testimonial = styled(Box)(({theme})=>({
      width:'70vh',
@@ -114,6 +141,12 @@ const Testimonial = styled(Box)(({theme})=>({
      
     [theme.breakpoints.down('mobile')]:{
         marginLeft:'0vh'
+      },
+    [theme.breakpoints.down('tablet')]:{
+        marginLeft:'0vh',
+        fontSize:'30px',
+        width:'60vh',
+        
       }
 }))
 const Origin = styled(Typography)(({theme})=>({

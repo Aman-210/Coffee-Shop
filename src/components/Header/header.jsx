@@ -113,7 +113,7 @@ const MenuBar = styled(Box)(({theme})=>({
    };
    const list =()=>{
     return(
-    <Box sx={{ width: '400px', height:'47vh', background:'black' , color:'#fff', position:'fixed' }} onClick ={handleClose}> 
+    <Box sx={{ width: '400px', height:'57vh', background:'rgba(0, 0, 0, 0.5)' , color:'#fff', position:'fixed' , fontWeight:'bold' , }} onClick ={handleClose}> 
       <List>
         <ListItem1 >
           <ListItemButton>
@@ -130,11 +130,11 @@ const MenuBar = styled(Box)(({theme})=>({
           <Tab href='#component4' label="Organic Coffee"/>
           </ListItemButton>
         </ListItem1>
-        <ListItem2>
-          <ListItemButton    onClick={()=>setShow(false)} >
+        <ListItem2 >
+          <ListItemButton    onClick={()=>setShow(false)} sx={{color:'rgb(247, 213, 189)'}} >
           <span   style={{ marginRight: '0.5rem'  }}>MyCart</span> <AddShoppingCartIcon/> <span>{size}</span>
           </ListItemButton>
-          <ListItemButton onClick={()=>openDialog()}>
+          <ListItemButton onClick={()=>openDialog()} sx={{color:'rgb(247, 213, 189)'}}>
           <span style={{ marginRight: '0.5rem' }}>Login/SignUp</span> <AccountCircleIcon  />
           </ListItemButton>
         </ListItem2>
@@ -148,8 +148,8 @@ const MenuBar = styled(Box)(({theme})=>({
     <>
     <StyledHeader>
      <Toolbar>
-     <Box >
-      <img  onClick={()=>setShow(true)}  src= "https://opencart.workdo.io/coffee/image/catalog/storlogo/logo.png" alt="" />
+     <Box style={{cursor:'pointer'}}>
+      <img  onClick={()=>setShow(true)}  src= "https://opencart.workdo.io/coffee/image/catalog/storlogo/logo.png" alt="logo" />
      </Box>
      <MenuBar  onClick={()=>handleOpen()}>
      <MenuIcon/>
@@ -158,7 +158,7 @@ const MenuBar = styled(Box)(({theme})=>({
       {list()}
       
      </Drawer>
-     <Family textColor='inherit' value={0} >
+     <Family textColor='inherit' >
       <Tab href='#component1' label="Latte's"/>
       <Tab href='#component2' label="Cups & Mugs" /> 
       <Tab href='#component3' label="Raw-Coffee"/>
