@@ -78,8 +78,8 @@ const Box3 = styled(Box)(({theme})=>({
         
       },
     [theme.breakpoints.down('mobile')]:{
-        marginLeft:'1vh',
-        marginTop:'-50vh'
+        marginLeft:'-1vh',
+        marginTop:'-90vh'
       },
 }))
 const Country = styled(Box)(({theme})=>({
