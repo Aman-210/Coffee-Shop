@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+
+import {BrowserRouter , Routes, Route} from 'react-router-dom';
+
+import Home from './Components/Home/Home';
+import LoginDialog from './Components/Pages/Login';
+import SignUp from './Components/Pages/Signup';
+import Cart from './Components/Pages/Cart';
+import Header from './Components/Header/Header';
+
+import './index.css';
+import Detail from './Components/Products Detail/Detail';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <BrowserRouter basename='Coffee-Shop'>
+      <Header/>
+    <Routes>
+      
+      <Route path='/' element={<Home/>}  />
+      <Route path='/login' element={<LoginDialog/>}/>
+      <Route path= "/signup" element = {<SignUp/>}/>
+      <Route path='/cart' element={<Cart/>}/>
+      <Route path='/detail' element={<Detail/>}/>
+
+    </Routes>
+    
+    </BrowserRouter>
+    </>
   );
 }
 
